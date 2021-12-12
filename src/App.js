@@ -191,12 +191,13 @@ const App = () => {
                 <input value={input} onChange={e => setInput(e.target.value)} />
               </div>
         </div>
+        <div className="waveContainer">
         {!currentAccount && (
           <button className="waveButton" onClick={connectWallet}>
             Connect Wallet
           </button>
         )}
-
+        </div>
         {allWaves.map((wave, index) => {
           return (
             <div className="waveList" key={index} style={{ backgroundColor: "OldLace", marginTop: "16px", padding: "8px" }}>
